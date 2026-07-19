@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+.app{
+    display:flex;
+    min-height:100vh;
+}
+
+.history-panel{
+    width:250px;
+    background:#111827;
+    padding:20px;
+    border-right:1px solid #334155;
+}
+
+.history-panel h2{
+    margin-bottom:15px;
+}
+
+#historyList{
+    list-style:none;
+}
+
+#historyList li{
+    background:#1e293b;
+    padding:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+#historyList li:hover{
+    background:#334155;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+button{
+    padding:15px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.hidden{
+    display:none;
+}
+
+.word-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.word-card h2{
+    margin-bottom:10px;
+}
+
+.phonetic{
+    color:#93c5fd;
+    margin-bottom:15px;
+}
+
+.section{
+    margin-top:20px;
+}
+
+.section h3{
+    margin-bottom:8px;
+    color:#60a5fa;
+}
+
+.audio-btn{
+    margin-top:10px;
+}
+
+.error{
+    background:#7f1d1d;
+    padding:15px;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+
+    .app{
+        flex-direction:column;
+    }
+
+    .history-panel{
+        width:100%;
+    }
+
+    form{
+        flex-direction:column;
+    }
+}

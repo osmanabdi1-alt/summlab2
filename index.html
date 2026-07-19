@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiSearch Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <aside class="history-panel">
+            <h2>Recent Searches</h2>
+            <ul id="historyList"></ul>
+        </aside>
+
+        <main class="main-content">
+
+            <h1>📚 LexiSearch</h1>
+            <p class="subtitle">
+                Search any English word and discover its meaning.
+            </p>
+
+            <form id="searchForm">
+                <input
+                    type="text"
+                    id="wordInput"
+                    placeholder="Enter a word..."
+                    autocomplete="off"
+                >
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="loading" class="hidden">
+                Loading...
+            </div>
+
+            <div id="result"></div>
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
